@@ -1,6 +1,6 @@
 # claude-capacitacion
 
-> 🇪🇸 A ready-to-use, **Spanish-language** enablement kit for rolling out **Claude** in
+> A ready-to-use, **Spanish-language** enablement kit for rolling out **Claude** in
 > a company — both Enterprise / Cowork (non-technical) and Claude Code (technical).
 > Curated official sources, a session plan, and copy-paste `CLAUDE.md` /
 > `settings.json` templates.

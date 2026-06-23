@@ -13,7 +13,7 @@
 > Estado: v2.6, 2026-06-22 (v2.6 suma **The Founder's Playbook** — guia oficial
 > Anthropic por etapa de startup, fila "Founder / startup" en guias por funcion;
 > base para recomendar a founders solos). v2.5, 2026-06-20 (v2.3 Claude for Small Business; v2.4 "Configurar un
-> proyecto con Claude Code" — abre bocas track Code con los 4 habitos de Alex Wang,
+> proyecto con Claude Code" — abre bocas track Code con los 4 habitos de un Claude Code confiable,
 > estructura `.claude/` oficial y `deny` para secretos verificado; v2.5 suma la
 > **plantilla `CLAUDE.md` de empresa lista para distribuir**, sanitizada). La v1
 > era demasiado prescriptiva; esta version prioriza fuentes oficiales/originales,
@@ -25,7 +25,7 @@ Este documento es la **guía** (la SSOT — el *por qué* y cómo armar la capac
 Desde aquí se llega a los entregables visuales y listos para repartir:
 
 - 📊 **Diagrama de capas** — [`diagrama-capas-claude-empresa.md`](diagrama-capas-claude-empresa.md):
-  infográfico ASCII (estilo Alex Wang) del modelo en capas. Ideal como handout/slide.
+  infográfico ASCII del modelo en capas. Ideal como handout/slide.
 - 📄 **Plantilla global lista** — [`global-claude-md-empresa.md`](global-claude-md-empresa.md):
   `CLAUDE.md` para `~/.claude/` (capa 1, compartible con cualquier empleado).
 - 📄 **Plantilla por proyecto lista** — [`proyecto-claude-md-empresa.md`](proyecto-claude-md-empresa.md):
@@ -132,7 +132,6 @@ Ordenado por relevancia para usuarios no tecnicos, no solo por vistas.
 | 5 | [Claude Cowork Full Tutorial](https://www.youtube.com/watch?v=vMo-yRCN3QM) | Bart Slodyczka | 14:23 | 312K | 4.8K | Resumen de workflow, plugins y tareas. |
 | 6 | [How to Use Claude Cowork Better Than 99% of People](https://www.youtube.com/watch?v=f95-O8C88uw) | AI for Non Techies | 20:43 | 206K | 4.8K | Muy alineado con audiencia no tecnica; lenguaje accesible. |
 | 7 | [Claude Cowork - Full Course for Beginners](https://www.youtube.com/watch?v=tf_KmDNZXzI) | Tech With Tim | 24:16 | 164K | 2.7K | Buen video si alguien quiere entender diferencias con Claude Code. |
-| apertura | [Learn These 6 AI Skills Now (Before AI Replaces You)](https://www.youtube.com/watch?v=3XIGcM7VICc) | Nate Herk \| AI Automation | 20:15 | 63.4K | 2.6K | Mindset, no tutorial. Sirve para **abrir** cualquier track o charla. Ademas, **modelo de estilo de comunicacion** (ver seccion al final). |
 
 ### Posts X/LinkedIn utiles para BPO
 
@@ -227,8 +226,7 @@ Datos consultados con YouTube Data API el 2026-06-19.
 | [@Mnilax - Don't build agents, build skills instead](https://x.com/Mnilax/status/2060422436370210922) | Skills vs agents. | Frase potente para data/dev: encapsular procedimiento. |
 | [@cyrilXBT - Anthropic skills talk](https://x.com/cyrilXBT/status/2054033707296547043) | Skills y mantenimiento. | Complementa el video AI Engineer. |
 | [Brij Kishore Pandey - Claude Code project structure](https://www.linkedin.com/posts/brijpandeyji_the-claude-code-project-structure-i-wish-activity-7441293017766051840-oMkH) | Estructura `.claude/`, skills, commands, agents, hooks. | Util como slide visual de la estructura `.claude/`. |
-| [Nate Herk - Claude Code skills](https://www.linkedin.com/posts/nateherkelman_i-tried-100-claude-code-skills-these-6-activity-7456701386110435328-SsG0) | Skills reutilizables. | Sirve para explicar que productividad = workflows empaquetados. |
-| Alex Wang - 4 habits que hacen Claude Code mas confiable | `CLAUDE.md` estable (no dump), Plan Mode, prompts→skills, hooks para lo deterministico. | Base del "abre bocas" del track Code (ver seccion "Configurar un proyecto con Claude Code"). Buen slide de habitos. |
+| Los 4 habitos de un Claude Code confiable | `CLAUDE.md` estable (no dump), Plan Mode, prompts→skills, hooks para lo deterministico. | Base del "abre bocas" del track Code (ver seccion "Configurar un proyecto con Claude Code"). Buen slide de habitos. |
 
 ## Skills/plugins existentes que si conviene mostrar
 
@@ -377,8 +375,7 @@ Para BPO se expresa como carpeta acotada y confirmacion; para Code como permisos
 
 ### Los 4 habitos (modelo mental)
 
-Destilado de un post de Alex Wang (LinkedIn, *Learn AI Together*) — buen material
-divulgativo para explicar el cambio de mentalidad:
+Material divulgativo para explicar el cambio de mentalidad:
 
 1. **No conviertas `CLAUDE.md` en un volcado de instrucciones.** Solo lo
    **estable**: contexto del proyecto, arquitectura, convenciones, comandos
@@ -524,42 +521,6 @@ Demo:
 - Skill de dominio de datos: grain, filtros, tablas, gotchas.
 - Query/analysis + subagent de validacion.
 - Hook que exige actualizar skill cuando cambia un modelo.
-
-## Estilo de comunicacion de referencia (Nate Herk)
-
-> Modelo de estilo para guiones de charlas/videos, destilado del transcript de
-> [Learn These 6 AI Skills Now](https://www.youtube.com/watch?v=3XIGcM7VICc)
-> (Nate Herk | AI Automation, 816K subs). No es por el tema, es por **como
-> explica**: claridad, ritmo y retencion. Sirve para imitar el formato, no copiar
-> contenido.
-
-### Las 7 tecnicas que usa
-
-1. **Hook de stakes + curiosity gap.** Abre con lo que esta en juego ("AI va a
-   reemplazar millones de empleos, incluido el tuyo, a menos que...") y planta una
-   intriga para el final ("la ultima skill te va a sorprender").
-2. **Estructura numerada limpia.** Lista cerrada (6 skills); cada punto es un
-   micro-capitulo autonomo con su propio cierre.
-3. **Una analogia cotidiana por concepto abstracto** (su sello mas fuerte):
-   becario de verano = context engineering; ensenar a andar en bici = iteracion;
-   expendedora vs tragamonedas = workflow deterministico vs agente AI; Iron
-   Man/Jarvis = sistemas always-on; contador y Excel = adaptarse o quedar fuera.
-   **Regla: ningun concepto abstracto sin su analogia.**
-4. **Vulnerabilidad que genera confianza.** "Me siento abrumado cada dia por lo
-   que no se", "es todo relativo". Baja la barrera; no se pone por encima.
-5. **Siempre aterriza en accion.** Tras cada idea, "y como lo haces en la
-   practica?" con pasos concretos. Nunca se queda en lo conceptual.
-6. **Datos para autoridad, dosificados.** Estudio IBM 2026 (85% de CEOs), cita de
-   Karpathy. Uno o dos por seccion, no mas.
-7. **Frases memorables (sticky one-liners).** "Taste is deciding what deserves
-   your name", "garbage in, garbage out", "vending machine vs slot machine".
-   Disena 1 frase pegajosa por punto.
-
-### Plantilla aplicable a un guion
-
-Hook con stakes -> promesa/intriga -> lista numerada -> por cada item:
-**concepto -> analogia cotidiana -> ejemplo real -> "como hacerlo" accionable ->
-one-liner memorable** -> cierre con CTA.
 
 ## Próximos pasos (para quien adapte esta capacitación)
 

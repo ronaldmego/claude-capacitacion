@@ -1,6 +1,6 @@
 # Diagrama — Claude en la empresa: cómo se construye un setup gobernado
 
-> Material visual para capacitación (estilo infográfico tipo Alex Wang). Explica
+> Material visual para capacitación (estilo infográfico). Explica
 > el modelo en **capas**, de lo más general (todos los empleados) a lo más
 > específico (un repo). Genérico y sanitizado: sin identidades, hosts ni rutas
 > propias. Acompaña a `proyecto-claude-md-empresa.md` (capa por proyecto).

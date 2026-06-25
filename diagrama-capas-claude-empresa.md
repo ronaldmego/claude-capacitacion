@@ -1,9 +1,10 @@
 # Diagrama — Claude en la empresa: cómo se construye un setup gobernado
 
-> Material visual para capacitación (estilo infográfico). Explica
-> el modelo en **capas**, de lo más general (todos los empleados) a lo más
-> específico (un repo). Genérico y sanitizado: sin identidades, hosts ni rutas
-> propias. Acompaña a `proyecto-claude-md-empresa.md` (capa por proyecto).
+> **Track Code / data.** Material visual para capacitación (estilo infográfico).
+> Explica el modelo en **capas** de `CLAUDE.md` + `settings.json`, de lo más general
+> (todos los empleados) a lo más específico (un repo). Genérico y sanitizado: sin
+> identidades, hosts ni rutas propias. Acompaña a `proyecto-claude-md-empresa.md`
+> (capa por proyecto) y se explica en [`guia-code.md`](guia-code.md).
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗

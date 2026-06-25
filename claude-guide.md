@@ -33,8 +33,12 @@ entra a `guia-code.md` y no tiene que cruzar contenido de Cowork que no le sirve
 
 ## Materiales de esta carpeta
 
-Ademas de las dos guias, la carpeta trae entregables visuales y listos para repartir
-(todos del **track Code**, salen de la guia tecnica):
+Ademas de las dos guias, la carpeta trae entregables visuales y listos para repartir.
+**Todos pertenecen al track Code** (modelo en capas de `CLAUDE.md` + `settings.json`);
+el **cómo y el por qué de usarlos** se explica en
+[`guia-code.md` → Configurar un proyecto con Claude Code](guia-code.md#configurar-un-proyecto-con-claude-code-abre-bocas)
+y en su sección [Plantillas listas para distribuir](guia-code.md#plantillas-listas-para-distribuir).
+Aquí van solo como índice:
 
 - 📊 **Diagrama de capas** — [`diagrama-capas-claude-empresa.md`](diagrama-capas-claude-empresa.md):
   infográfico ASCII del modelo en capas. Ideal como handout/slide.
@@ -44,6 +48,9 @@ Ademas de las dos guias, la carpeta trae entregables visuales y listos para repa
   `CLAUDE.md` para la raíz de un repo (capa 2).
 - ⚙️ **Settings sample** — [`settings-json-empresa.md`](settings-json-empresa.md):
   `settings.json` con `deny` para proteger secretos (acompaña a las plantillas).
+
+> El track **BPO/Cowork** no usa archivos `CLAUDE.md`/`settings.json`: su equivalente
+> son las *Project instructions* dentro de Cowork (ver [`guia-bpo.md`](guia-bpo.md)).
 
 La capacitacion debe apoyarse en fuentes existentes, en este orden de confianza:
 

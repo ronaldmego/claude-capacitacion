@@ -16,6 +16,10 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
   table, track-based quick start). No content lost — existing sections were moved into
   the matching track guide; shared skill-sources table and cross-track minimum reading
   stay in the central.
+- Reframed the deliverables (layered diagram + 3 templates + settings sample) as
+  **Code-track artifacts**: the central "Materiales" section now points to
+  `guia-code.md` for the how-to and notes that BPO/Cowork uses Project instructions
+  instead of `CLAUDE.md`. The diagram header now states it belongs to the Code track.
 
 ### Added
 - `skills.sh` (registry/buscador web de skills) added to the shared skill-sources table

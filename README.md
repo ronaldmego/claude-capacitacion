@@ -31,6 +31,7 @@ claude-guide.md   ← central router / curated index — START HERE
 README.md         ← this file (structure + table of contents)
 
 comun/            ← shared core (used by BOTH tracks)
+  seguridad.md                      🔒 dedicated security section (proven practices)
   global-claude-md-empresa.md       global CLAUDE.md template (~/.claude/)
   proyecto-claude-md-empresa.md     per-project CLAUDE.md template
   settings-json-empresa.md          settings.json sample (protect secrets)
@@ -49,6 +50,11 @@ bpo/              ← BPO / Cowork track (secondary)
 shared skill/plugin sources, minimum cross-track reading, security note, and the
 training program.
 
+**🔒 Security (cross-track):** [`comun/seguridad.md`](comun/seguridad.md) — dedicated
+security section: least-privilege + human-in-the-loop, secrets hygiene, and **proven
+technical guardrails** (`settings.json` deny, hooks, the secret-leak guard recipe). One
+of the most common questions in any rollout.
+
 **★ Track Code / data** (primary)
 - [`code-data/guia-code.md`](code-data/guia-code.md) — Claude Code, `CLAUDE.md` / skills
   / hooks / subagents / MCP, self-service analytics, project setup, security
@@ -59,6 +65,9 @@ training program.
   HR, ops), official sources by function, security (access & actions). Self-contained.
 
 **Shared core — `comun/`** (used by both tracks)
+- 🔒 [`comun/seguridad.md`](comun/seguridad.md) — **dedicated security section**:
+  least-privilege + human-in-the-loop, secrets hygiene, and proven technical guardrails
+  (deny rules, hooks, the secret-leak guard recipe).
 - [`comun/diagrama-capas-claude-empresa.md`](comun/diagrama-capas-claude-empresa.md) —
   ASCII diagram of the layered setup (global vs per-project), infographic-style.
 - [`comun/global-claude-md-empresa.md`](comun/global-claude-md-empresa.md) — ready

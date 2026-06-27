@@ -6,6 +6,14 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Dedicated security section** → `comun/seguridad.md`. Cross-track: the common
+  principle (least-privilege + human-in-the-loop, secrets only in `.env` and never
+  printed) plus **proven technical guardrails** for the Code/data track — `settings.json`
+  deny rules, hooks as deterministic guardrails, and a full recipe for a **secret-leak
+  guard** (`PreToolUse` hook, warn mode) with the golden rule `${VAR:+PRESENTE}` (never
+  `${VAR:-...}`, which prints the value). Linked from the README index, the router, and
+  the Code track. Generic/public-safe; reflects real production practice. Security is one
+  of the most common questions in any rollout, so it now has its own block.
 - **"Global skills" layer (Layer 1.5)** in the global `CLAUDE.md` template + README
   layered model: reusable skills invocable as `/<name>` from any project, wired from a
   versioned hub repo into `~/.claude/skills/`, with secrets loaded global-first from a

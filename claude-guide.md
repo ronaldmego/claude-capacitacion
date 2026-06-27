@@ -101,10 +101,14 @@ una skill, leer `SKILL.md` y cualquier script incluido** (una skill = instruccio
 
 ## Seguridad — nota transversal
 
-> El tema de seguridad es **distinto en cada track** y casi siempre sale en la
-> capacitacion. El detalle (preguntas tipicas + respuestas) vive en cada guia:
-> [Code → secretos, permisos, ejecucion](code-data/guia-code.md#seguridad--el-riesgo-es-secretos-permisos-y-ejecucion) ·
-> [BPO → acceso y acciones](bpo/guia-bpo.md#seguridad--el-riesgo-es-acceso-y-acciones-no-codigo).
+> 🔒 **Sección dedicada: [`comun/seguridad.md`](comun/seguridad.md)** — el principio
+> común + las **prácticas técnicas probadas** (deny en `settings.json`, hooks como
+> guardrails, el recipe del guard anti-fuga-de-secretos). La seguridad es de los temas
+> más recurrentes en capacitaciones, así que tiene su propio bloque.
+
+El detalle (preguntas tipicas + respuestas) vive además en cada guia:
+[Code → secretos, permisos, ejecucion](code-data/guia-code.md#seguridad--el-riesgo-es-secretos-permisos-y-ejecucion) ·
+[BPO → acceso y acciones](bpo/guia-bpo.md#seguridad--el-riesgo-es-acceso-y-acciones-no-codigo).
 
 El principio comun: **minimo privilegio + humano en las decisiones irreversibles**.
 Para BPO se expresa como carpeta acotada y confirmacion; para Code como permisos,

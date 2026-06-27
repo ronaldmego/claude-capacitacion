@@ -196,6 +196,10 @@ Buen entregable para compartir con un equipo tras la capacitacion del track Code
 ## Seguridad — el riesgo es **secretos, permisos y ejecucion**
 
 > Fuente oficial: [Settings / permissions](https://code.claude.com/docs/en/settings).
+>
+> 🔒 **Prácticas probadas (recipe completo):** [`comun/seguridad.md`](../comun/seguridad.md)
+> — deny en `settings.json`, hooks como guardrails, y el guard anti-fuga-de-secretos
+> (`${VAR:+PRESENTE}`, nunca `${VAR:-}`).
 
 Aqui SI hay que entrar a `.env`, permisos y hooks. Las preguntas tipicas:
 
